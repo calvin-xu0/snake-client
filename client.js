@@ -13,6 +13,7 @@ const connect = function () {
 
   conn.on("connect", () => {
     console.log("Connection established.");
+    conn.write("Name: :^)") // вас
   });
   
   conn.on("data", (data) => {
